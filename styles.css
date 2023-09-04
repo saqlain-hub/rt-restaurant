@@ -1,3 +1,11 @@
+:root {
+  --primary-dark: #2f2f2f;
+  --primary-light: #f1f1f1;
+  --secondary-dark: #303030;
+  --primary-yellow-text: #ffc200;
+  --primary-dark-text: #333333;
+  --overlay-color: #ffd448;
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +13,7 @@
 }
 
 body {
-  background-color: #ccc;
+  background-color: var(--primary-light);
   font-family: ariel, sans-serif;
 }
 
@@ -36,7 +44,7 @@ nav.navbar ul {
 
 nav.navbar ul li a {
   text-decoration: none;
-  color: white;
+  color: #fff;
   font-size: 1.3rem;
 }
 
@@ -51,17 +59,111 @@ nav.navbar .search img {
 nav.navbar .design-left {
   position: absolute;
   left: 318px;
-  top: 0;
+  top: -20px;
   z-index: -21;
-  width: 340px;
+  width: 350px;
 }
 
 nav.navbar .fill-design {
   width: 68%;
   height: 594px;
-  background-color: #2f2f2f;
+  background-color: var(--primary-dark);
   position: absolute;
   z-index: -20;
   top: 0;
   right: 0;
 }
+
+.header-wrapper {
+  width: 100%;
+  height: 85vh;
+}
+/* Header */
+header {
+  position: absolute;
+  right: 5rem;
+  top: 11rem;
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+}
+
+header img {
+  display: none;
+}
+
+header h1 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  color: var(--primary-yellow-text);
+}
+header p {
+  color: #fff;
+  margin-bottom: 1.8rem;
+  line-height: 25px;
+  font-family: 'Lucida Console';
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+header button {
+  width:10rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px 10px;
+  background: var(--primary-yellow-text);
+  color: var(--primary-dark-text);
+  border: none;
+  border-radius: 3px;
+}
+
+
+
+/* Hero Section */
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  background-color: #ccc;
+  padding: 3.5rem 0;
+}
+
+.hero-section .section-flex {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.hero-section-title {
+  text-align: center;
+  margin-bottom: 3.5rem;
+
+}
+
+.hero-section-title h2 {
+  font-size: 2.5em;
+  margin-bottom: 1.5rem;
+
+}
+
+.hero-section-title p {
+  margin: 0 12rem;
+}
+
+
+
+.hero-section-dishes .dishes-flex {
+  width: 100%;
+  display: flex;
+  gap: 5.5rem;
+  text-align: center;
+}
+
+.hero-section img {
+  width: 45%;
+  border-radius: 50%;
+}
+
