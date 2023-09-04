@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Open+Sans:wght@300;400;500;700&family=Outfit:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 :root {
   --primary-dark: #2f2f2f;
   --primary-light: #f1f1f1;
@@ -14,7 +17,8 @@
 
 body {
   background-color: var(--primary-light);
-  font-family: ariel, sans-serif;
+  font-family: Open Sans;
+  font-weight: 400;
 }
 
 nav.navbar {
@@ -95,6 +99,7 @@ header img {
 header h1 {
   color: #fff;
   margin-bottom: 1.5rem;
+  font-family: 'Pacifico', cursive;
   font-size: 3rem;
   color: var(--primary-yellow-text);
 }
@@ -102,7 +107,7 @@ header p {
   color: #fff;
   margin-bottom: 1.8rem;
   line-height: 25px;
-  font-family: 'Lucida Console';
+  font-family: 'Open sans';
   font-size: 17px;
   letter-spacing: 2px;
 }
@@ -110,6 +115,7 @@ header button {
   width:10rem;
   text-transform: uppercase;
   font-weight: bold;
+  font-family: 'Open Sans';
   cursor: pointer;
   padding: 8px 10px;
   background: var(--primary-yellow-text);
@@ -127,7 +133,7 @@ header button {
   display: flex;
   flex-direction:column;
   align-items: center;
-  background-color: #ccc;
+  /* background-color: #ccc; */
   padding: 3.5rem 0;
 }
 
@@ -144,6 +150,7 @@ header button {
 }
 
 .hero-section-title h2 {
+  font-family: 'Open Sans';
   font-size: 2.5em;
   margin-bottom: 1.5rem;
 
@@ -160,6 +167,10 @@ header button {
   display: flex;
   gap: 5.5rem;
   text-align: center;
+}
+
+.hero-section-dishes .dishes h3{
+  font-family: 'Pacifico', cursive;
 }
 
 .hero-section img {
