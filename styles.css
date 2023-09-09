@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Open+Sans:wght@300;400;500;700&family=Outfit:wght@100;200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Open+Sans:wght@300;400;500;700&family=Outfit:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 :root {
   --primary-dark: #2f2f2f;
@@ -17,8 +17,21 @@
 
 body {
   background-color: var(--primary-light);
-  font-family: Open Sans;
+  font-family: Open Sans, sans-serif;
   font-weight: 400;
+}
+
+button {
+  width: 10rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  padding: 10px;
+  background: var(--primary-yellow-text);
+  color: var(--primary-dark-text);
+  border: none;
+  border-radius: 3px;
 }
 
 nav.navbar {
@@ -99,39 +112,26 @@ header img {
 header h1 {
   color: #fff;
   margin-bottom: 1.5rem;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   font-size: 3rem;
   color: var(--primary-yellow-text);
 }
 header p {
   color: #fff;
-  margin-bottom: 1.8rem;
+  margin-bottom: 2rem;
   line-height: 25px;
-  font-family: 'Open sans';
   font-size: 17px;
   letter-spacing: 2px;
+  padding-right: 5rem;
+  text-align: justify;
 }
-header button {
-  width:10rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: 'Open Sans';
-  cursor: pointer;
-  padding: 8px 10px;
-  background: var(--primary-yellow-text);
-  color: var(--primary-dark-text);
-  border: none;
-  border-radius: 3px;
-}
-
-
 
 /* Hero Section */
 .hero-section {
   width: 100%;
   height: 100vh;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
   /* background-color: #ccc; */
   padding: 3.5rem 0;
@@ -146,21 +146,17 @@ header button {
 .hero-section-title {
   text-align: center;
   margin-bottom: 3.5rem;
-
 }
 
 .hero-section-title h2 {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 2.5em;
   margin-bottom: 1.5rem;
-
 }
 
 .hero-section-title p {
   margin: 0 12rem;
 }
-
-
 
 .hero-section-dishes .dishes-flex {
   width: 100%;
@@ -169,8 +165,10 @@ header button {
   text-align: center;
 }
 
-.hero-section-dishes .dishes h3{
-  font-family: 'Pacifico', cursive;
+.hero-section-dishes .dishes h3 {
+  font-family: "Pacifico", cursive;
+  margin: 0.6rem 0;
+  cursor: pointer;
 }
 
 .hero-section img {
@@ -178,3 +176,111 @@ header button {
   border-radius: 50%;
 }
 
+/* Section One */
+.section-one {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.section-one .design-top {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  position: absolute;
+  z-index: -23;
+}
+.section-one .design-top img {
+  width: 120%;
+}
+
+.section-one .design-top .bottom-smooth {
+  position: absolute;
+  height: 10vh;
+  bottom: 0;
+  z-index: -22;
+}
+
+.section-one .order-now {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  padding: 0 11rem;
+  position: absolute;
+  top: 11rem;
+}
+
+.order-now .dish-description h2 {
+  margin-bottom: 1.2rem;
+  font-size: 3em;
+  font-family: "Pacifico", cursive;
+  color: var(--primary-yellow-text);
+}
+
+.order-now .dish-description p {
+  margin-bottom: 1.2rem;
+  color: #fff;
+  line-height: 25px;
+  padding-right: 7rem;
+}
+
+.section-one .order-now img {
+  width: 250px;
+  border-radius: 50%;
+}
+
+/* Section two Statistics */
+
+.section-two.statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-two.statistics .top {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.section-two.statistics .top h2 {
+  margin-bottom: 1rem;
+  font-family: "Pacifico", cursive;
+  font-size: 3em;
+  color: var(--primary-yellow-text);
+}
+
+.section-two.statistics .top p {
+  padding: 0 22rem;
+  line-height: 20px;
+  color: #fff;
+}
+
+.section-two.statistics .bottom {
+  display: flex;
+  gap: 3rem;
+}
+
+.section-two.statistics .bottom .circle {
+  border: 2px solid var(--primary-yellow-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  color: #fff;
+}
+
+.section-two.statistics .bottom .circle p:nth-child(1) {
+  margin-bottom: 3px;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.section-two.statistics .bottom .circle p:nth-child(2) {
+  font-weight: bold;
+}
