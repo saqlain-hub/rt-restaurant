@@ -75,8 +75,8 @@ nav.navbar .search img {
 
 nav.navbar .design-left {
   position: absolute;
-  left: 318px;
-  top: -20px;
+  left: 23%;
+  top: -13px;
   z-index: -21;
   width: 350px;
 }
@@ -241,11 +241,11 @@ header p {
 
 .section-two.statistics .top {
   text-align: center;
-  margin-bottom: 3.5rem;
+  margin-bottom: 4rem;
 }
 
 .section-two.statistics .top h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-family: "Pacifico", cursive;
   font-size: 3em;
   color: var(--primary-yellow-text);
@@ -259,17 +259,17 @@ header p {
 
 .section-two.statistics .bottom {
   display: flex;
-  gap: 3rem;
+  gap: 4.5rem;
 }
 
 .section-two.statistics .bottom .circle {
-  border: 2px solid var(--primary-yellow-text);
+  border: 3.5px solid var(--primary-yellow-text);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 130px;
-  height: 130px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   overflow: hidden;
   color: #fff;
@@ -283,4 +283,49 @@ header p {
 
 .section-two.statistics .bottom .circle p:nth-child(2) {
   font-weight: bold;
+}
+
+/* Section Three */
+
+.section-three {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.section-three .design-top {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: -10px;
+  z-index: -23;
+}
+
+.section-three .order-now {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  padding: 0 11rem;
+  position: absolute;
+  bottom: 10rem;
+}
+
+.section-three .order-now img {
+  order: 2;
+  width: 250px;
+  border-radius: 50%;
+}
+
+.section-three .design-top img {
+  width: 112%;
+}
+
+/* Testimonials */
+
+.testimonials {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/background.png");
 }
